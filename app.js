@@ -1,4 +1,3 @@
-
 const WA_PHONE = '2348154791878';
 
 // ── THEME
@@ -14,7 +13,7 @@ function applyTheme(t) {
 }
 applyTheme(localStorage.getItem('ms-theme') || 'light');
 tBtn.addEventListener('click', () => applyTheme(html.dataset.theme === 'light' ? 'dark' : 'light'));
-
+ 
 // ── CURSOR
 const dot = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');
@@ -25,13 +24,13 @@ document.querySelectorAll('a,button,.project-card,.service-item,.review-card,.ch
   el.addEventListener('mouseenter', ()=>{ dot.style.width='14px'; dot.style.height='14px'; ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='var(--rust)'; });
   el.addEventListener('mouseleave', ()=>{ dot.style.width='8px'; dot.style.height='8px'; ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='var(--ink)'; });
 });
-
+ 
 // ── SCROLL REVEAL
 const ro = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('visible'),80); ro.unobserve(e.target); } });
 }, { threshold: .08 });
 document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
-
+ 
 // ── HERO SLIDESHOW
 const HERO_LABELS = [
   'Brand Identity · Visual Systems',
@@ -47,14 +46,14 @@ const heroDots = document.getElementById('heroDots');
 const heroLabel = document.getElementById('heroSlideLabel');
 let heroIdx = 0;
 let heroTimer;
-
+ 
 heroSlides.forEach((_,i) => {
   const d = document.createElement('button');
   d.className = 'hero-dot' + (i===0?' active':'');
   d.addEventListener('click', ()=>{ goHero(i); resetHeroTimer(); });
   heroDots.appendChild(d);
 });
-
+ 
 function goHero(n) {
   heroSlides[heroIdx].classList.remove('active');
   heroDots.children[heroIdx].classList.remove('active');
@@ -66,10 +65,10 @@ function goHero(n) {
 }
 function resetHeroTimer() { clearInterval(heroTimer); heroTimer = setInterval(()=>goHero(heroIdx+1), 4500); }
 resetHeroTimer();
-
+ 
 document.getElementById('heroPrev').addEventListener('click', ()=>{ goHero(heroIdx-1); resetHeroTimer(); });
 document.getElementById('heroNext').addEventListener('click', ()=>{ goHero(heroIdx+1); resetHeroTimer(); });
-
+ 
 // ── WORK SLIDER
 const workTrack = document.getElementById('workTrack');
 const workDots = document.getElementById('workDots');
@@ -79,14 +78,14 @@ const workNext = document.getElementById('workNext');
 const workSlides = Array.from(workTrack.children);
 const workTotal = workSlides.length;
 let workIdx = 0;
-
+ 
 workSlides.forEach((_,i) => {
   const d = document.createElement('button');
   d.className = 'work-dot' + (i===0?' active':'');
   d.addEventListener('click', ()=>goWork(i));
   workDots.appendChild(d);
 });
-
+ 
 function goWork(n) {
   workIdx = Math.max(0, Math.min(n, workTotal-1));
   workTrack.style.transform = `translateX(-${workIdx * 100}%)`;
@@ -98,7 +97,7 @@ function goWork(n) {
 workPrev.addEventListener('click', ()=>goWork(workIdx-1));
 workNext.addEventListener('click', ()=>goWork(workIdx+1));
 goWork(0);
-
+ 
 // ── REVIEWS SLIDER
 const reviewsTrack = document.getElementById('reviewsTrack');
 const reviewsDots = document.getElementById('reviewsDots');
@@ -109,12 +108,12 @@ const totalReviews = reviewCards.length;
 const VISIBLE = 3;
 const maxPage = totalReviews - VISIBLE;
 let reviewOffset = 0;
-
+ 
 function getCardWidth() {
   if(reviewCards[0]) return reviewCards[0].offsetWidth + 24;
   return 0;
 }
-
+ 
 const reviewPages = Math.ceil(totalReviews / VISIBLE);
 for(let i=0; i<reviewPages; i++){
   const d = document.createElement('button');
@@ -122,17 +121,17 @@ for(let i=0; i<reviewPages; i++){
   d.addEventListener('click', ()=>goReviews(i * VISIBLE));
   reviewsDots.appendChild(d);
 }
-
+ 
 function goReviews(offset) {
   reviewOffset = Math.max(0, Math.min(offset, maxPage));
   reviewsTrack.style.transform = `translateX(-${reviewOffset * getCardWidth()}px)`;
   const page = Math.round(reviewOffset / VISIBLE);
   Array.from(reviewsDots.children).forEach((d,i)=>d.classList.toggle('active',i===page));
 }
-
+ 
 reviewsPrev.addEventListener('click', ()=>goReviews(reviewOffset - VISIBLE));
 reviewsNext.addEventListener('click', ()=>goReviews(reviewOffset + VISIBLE));
-
+ 
 // ── WHATSAPP
 const waFab = document.getElementById('waFab');
 const waChat = document.getElementById('waChat');
@@ -143,7 +142,7 @@ const chatInp = document.getElementById('chatInp');
 const chatSend = document.getElementById('chatSend');
 const waBadge = document.querySelector('.wa-badge');
 let initialized = false;
-
+ 
 const KB = [
   { pattern:/pric|cost|rate|fee|budget|charge|how much/i, key:'pricing' },
   { pattern:/portfolio|work|project|sample|case|show/i, key:'portfolio' },
