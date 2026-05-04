@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adeleke Israel — Graphic Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle colour theme">
+  <span class="tt-icon" id="ttIcon">☀️</span>
+  <div class="tt-track"><div class="tt-thumb"></div></div>
+  <span id="ttLabel" style="opacity:.55">Light</span>
+</button>
+
+<nav>
+  <a class="nav-logo" href="#">Adeleke Israel</a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Graphic Designer & Visual Storyteller</p>
+    <h1 class="hero-name">Shaping<br><em>ideas</em><br>into form</h1>
+    <p class="hero-tagline">Brand identities, editorial layouts, and visual systems built with intention — for studios, founders, and anyone who believes design changes how the world thinks.</p>
+    <p class="hero-scroll">Scroll to explore</p>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-slides" id="heroSlides">
+
+      <!-- Slide 1: Brand Identity -->
+      <div class="hero-slide active">
+        <div class="hero-slide-art">
+          <svg viewBox="0 0 400 400" width="70%" fill="none"><circle cx="200" cy="200" r="160" stroke="white" stroke-width="0.5"/><circle cx="200" cy="200" r="120" stroke="white" stroke-width="0.5"/><circle cx="200" cy="200" r="80" stroke="white" stroke-width="0.5"/><line x1="40" y1="200" x2="360" y2="200" stroke="white" stroke-width="0.5"/><line x1="200" y1="40" x2="200" y2="360" stroke="white" stroke-width="0.5"/><line x1="87" y1="87" x2="313" y2="313" stroke="white" stroke-width="0.5"/><line x1="313" y1="87" x2="87" y2="313" stroke="white" stroke-width="0.5"/><polygon points="200,60 340,280 60,280" stroke="white" stroke-width="0.5" fill="none"/><rect x="120" y="120" width="160" height="160" stroke="white" stroke-width="0.5" fill="none" transform="rotate(45 200 200)"/></svg>
+        </div>
+      </div>
+
+      <!-- Slide 2: Editorial -->
+      <div class="hero-slide">
+        <div class="hero-slide-art">
+          <svg viewBox="0 0 400 400" width="70%" fill="none"><rect x="60" y="40" width="280" height="320" stroke="white" stroke-width="0.6"/><rect x="80" y="60" width="100" height="140" fill="white" opacity="0.15"/><line x1="60" y1="230" x2="340" y2="230" stroke="white" stroke-width="0.4"/><line x1="80" y1="250" x2="320" y2="250" stroke="white" stroke-width="0.4"/><line x1="80" y1="264" x2="260" y2="264" stroke="white" stroke-width="0.4"/><line x1="80" y1="278" x2="300" y2="278" stroke="white" stroke-width="0.4"/><line x1="80" y1="292" x2="240" y2="292" stroke="white" stroke-width="0.4"/><line x1="80" y1="306" x2="310" y2="306" stroke="white" stroke-width="0.4"/><text x="200" y="180" fill="white" font-size="11" text-anchor="middle" opacity="0.6" font-family="Georgia">Editorial</text></svg>
+        </div>
+      </div>
+
+      <!-- Slide 3: Packaging -->
+      <div class="hero-slide">
+        <div class="hero-slide-art">
+          <svg viewBox="0 0 400 400" width="70%" fill="none"><polygon points="200,40 340,120 340,280 200,360 60,280 60,120" stroke="white" stroke-width="0.6"/><polygon points="200,100 300,155 300,265 200,320 100,265 100,155" stroke="white" stroke-width="0.4"/><line x1="200" y1="40" x2="200" y2="360" stroke="white" stroke-width="0.3" stroke-dasharray="6,4"/><line x1="60" y1="200" x2="340" y2="200" stroke="white" stroke-width="0.3" stroke-dasharray="6,4"/></svg>
+        </div>
+      </div>
+
+      <!-- Slide 4: Motion -->
+      <div class="hero-slide">
+        <div class="hero-slide-art">
+          <svg viewBox="0 0 400 400" width="70%" fill="none"><circle cx="200" cy="200" r="140" stroke="white" stroke-width="0.5" stroke-dasharray="8,4"/><circle cx="200" cy="200" r="100" stroke="white" stroke-width="0.5" stroke-dasharray="6,3"/><circle cx="200" cy="200" r="60" stroke="white" stroke-width="0.5"/><circle cx="200" cy="60" r="8" fill="white" opacity="0.5"/><circle cx="340" cy="200" r="8" fill="white" opacity="0.3"/><circle cx="200" cy="340" r="8" fill="white" opacity="0.2"/><circle cx="60" cy="200" r="8" fill="white" opacity="0.4"/><path d="M200,200 L200,60" stroke="white" stroke-width="0.4"/><path d="M200,200 L340,200" stroke="white" stroke-width="0.4"/></svg>
+        </div>
+      </div>
+
+      <!-- Slide 5: Typography -->
+      <div class="hero-slide">
+        <div class="hero-slide-art">
+          <svg viewBox="0 0 400 400" width="70%" fill="none"><text x="40" y="160" fill="white" font-size="140" opacity="0.2" font-family="Georgia" font-style="italic">Aa</text><line x1="40" y1="180" x2="360" y2="180" stroke="white" stroke-width="0.5"/><line x1="40" y1="220" x2="360" y2="220" stroke="white" stroke-width="0.3"/><line x1="40" y1="240" x2="280" y2="240" stroke="white" stroke-width="0.3"/><line x1="40" y1="260" x2="320" y2="260" stroke="white" stroke-width="0.3"/></svg>
+        </div>
+      </div>
+
+      <!-- Slide 6: Systems -->
+      <div class="hero-slide">
+        <div class="hero-slide-art">
+          <svg viewBox="0 0 400 400" width="70%" fill="none"><rect x="60" y="60" width="80" height="80" stroke="white" stroke-width="0.5"/><rect x="160" y="60" width="80" height="80" stroke="white" stroke-width="0.5"/><rect x="260" y="60" width="80" height="80" stroke="white" stroke-width="0.5"/><rect x="60" y="160" width="80" height="80" stroke="white" stroke-width="0.5"/><rect x="160" y="160" width="80" height="80" fill="white" opacity="0.1" stroke="white" stroke-width="0.5"/><rect x="260" y="160" width="80" height="80" stroke="white" stroke-width="0.5"/><rect x="60" y="260" width="80" height="80" stroke="white" stroke-width="0.5"/><rect x="160" y="260" width="80" height="80" stroke="white" stroke-width="0.5"/><rect x="260" y="260" width="80" height="80" stroke="white" stroke-width="0.5"/><line x1="140" y1="100" x2="160" y2="100" stroke="white" stroke-width="0.4"/><line x1="240" y1="100" x2="260" y2="100" stroke="white" stroke-width="0.4"/></svg>
+        </div>
+      </div>
+
+      <!-- Slide 7: Art Direction -->
+      <div class="hero-slide">
+        <div class="hero-slide-art">
+          <svg viewBox="0 0 400 400" width="70%" fill="none"><ellipse cx="200" cy="200" rx="160" ry="100" stroke="white" stroke-width="0.5"/><ellipse cx="200" cy="200" rx="100" ry="160" stroke="white" stroke-width="0.5"/><circle cx="200" cy="200" r="30" stroke="white" stroke-width="0.5"/><circle cx="200" cy="200" r="4" fill="white" opacity="0.6"/><line x1="40" y1="200" x2="360" y2="200" stroke="white" stroke-width="0.3" stroke-dasharray="4,4"/><line x1="200" y1="40" x2="200" y2="360" stroke="white" stroke-width="0.3" stroke-dasharray="4,4"/></svg>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slide labels -->
+    <div class="hero-slide-label" id="heroSlideLabel">Brand Identity · Visual Systems</div>
+   
+    <div class="hero-deco">A</div>
+
+    <!-- Dots -->
+    <div class="hero-dots" id="heroDots"></div>
+
+    <!-- Arrows -->
+    <button class="hero-arrow prev" id="heroPrev">←</button>
+    <button class="hero-arrow next" id="heroNext">→</button>
+  </div>
+</section>
+
+<!-- ── MARQUEE ── -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Brand Identity</span><span class="marquee-item">Editorial Design</span><span class="marquee-item">Visual Systems</span><span class="marquee-item">Typography</span><span class="marquee-item">Art Direction</span><span class="marquee-item">Packaging</span><span class="marquee-item">Motion Graphics</span><span class="marquee-item">Print & Publication</span><span class="marquee-item">Brand Identity</span><span class="marquee-item">Editorial Design</span><span class="marquee-item">Visual Systems</span><span class="marquee-item">Typography</span><span class="marquee-item">Art Direction</span><span class="marquee-item">Packaging</span><span class="marquee-item">Motion Graphics</span><span class="marquee-item">Print & Publication</span>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
+<section class="about" id="about">
+  <div class="section-label reveal">About</div>
+  <div class="about-content reveal">
+    <h2>Design is not decoration — it is <em>clarity</em>.</h2>
+    <p>I'm Adeleke Israel, a graphic designer with eight years of experience helping brands find their visual voice. I work at the intersection of craft and strategy — turning complex ideas into elegant, purposeful design.</p>
+    <p>My practice spans brand identity, editorial systems, packaging, and art direction. Each project begins with deep listening and ends with something that feels inevitable — like it could not have been any other way.</p>
+    <div class="about-stats">
+      <div><div class="stat-num">8+</div><div class="stat-label">Years of practice</div></div>
+      <div><div class="stat-num">140</div><div class="stat-label">Projects delivered</div></div>
+      <div><div class="stat-num">32</div><div class="stat-label">Happy clients</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WORK SLIDER ── -->
+<section class="work" id="work">
+  <div class="work-header reveal">
+    <h2>Selected Work</h2>
+    <span>2021 — 2024</span>
+  </div>
+
+  <div class="work-slider-wrap reveal">
+    <div class="work-slider">
+      <div class="work-slides-track" id="workTrack">
+
+        <!-- Slide 1 (Projects 1–6) -->
+        <div class="work-slide-grid">
+          <div class="project-card pc-1">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><rect x="20" y="20" width="120" height="160" fill="white" opacity="0.6"/><rect x="160" y="50" width="120" height="100" fill="white" opacity="0.3"/><circle cx="80" cy="100" r="40" fill="none" stroke="white" stroke-width="2"/><line x1="20" y1="180" x2="280" y2="20" stroke="white" stroke-width="1"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Brand Identity</div><div class="project-title">Terracotta Studio — Full Brand System</div><a href="#" class="project-link">View project</a></div>
+          </div>
+          <div class="project-card pc-2">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 200 200" width="160" fill="none"><circle cx="100" cy="100" r="80" fill="none" stroke="white" stroke-width="1"/><circle cx="100" cy="100" r="50" fill="none" stroke="white" stroke-width="1"/><circle cx="100" cy="100" r="20" fill="white" opacity="0.4"/><rect x="30" y="150" width="140" height="30" fill="none" stroke="white" stroke-width="1"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Editorial Design</div><div class="project-title">Reverie Magazine — Vol. III Annual Issue</div><a href="#" class="project-link">View project</a></div>
+          </div>
+          <div class="project-card pc-3">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><polygon points="150,10 290,190 10,190" fill="none" stroke="white" stroke-width="1.5"/><polygon points="150,50 250,190 50,190" fill="none" stroke="white" stroke-width="0.8"/><line x1="0" y1="190" x2="300" y2="190" stroke="white" stroke-width="1"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Packaging</div><div class="project-title">Bloom Botanicals — Packaging Suite</div><a href="#" class="project-link">View project</a></div>
+          </div>
+          <div class="project-card pc-4">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><circle cx="80" cy="100" r="70" stroke="white" stroke-width="0.6"/><circle cx="220" cy="100" r="70" stroke="white" stroke-width="0.6"/><ellipse cx="150" cy="100" rx="20" ry="60" fill="white" opacity="0.12"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Visual Systems</div><div class="project-title">Venn Studio — Design Language</div><a href="#" class="project-link">View project</a></div>
+          </div>
+          <div class="project-card pc-5">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><rect x="30" y="30" width="100" height="140" stroke="white" stroke-width="0.6"/><rect x="170" y="60" width="100" height="80" stroke="white" stroke-width="0.6"/><line x1="130" y1="100" x2="170" y2="100" stroke="white" stroke-width="0.4"/><circle cx="80" cy="50" r="12" fill="white" opacity="0.3"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Art Direction</div><div class="project-title">Aurore Campaign — Editorial Shoot</div><a href="#" class="project-link">View project</a></div>
+          </div>
+          <div class="project-card pc-6">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><path d="M30,100 Q80,30 150,100 Q220,170 270,100" stroke="white" stroke-width="1" fill="none"/><path d="M30,120 Q80,50 150,120 Q220,190 270,120" stroke="white" stroke-width="0.5" fill="none"/><circle cx="150" cy="100" r="15" fill="white" opacity="0.3"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Motion & Digital</div><div class="project-title">Wave — Animated Brand Identity</div><a href="#" class="project-link">View project</a></div>
+          </div>
+        </div>
+
+        <!-- Slide 2 (Projects 7–10 + 2 repeats as fillers) -->
+        <div class="work-slide-grid">
+          <div class="project-card pc-7">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><rect x="40" y="40" width="220" height="120" stroke="white" stroke-width="0.6"/><line x1="40" y1="80" x2="260" y2="80" stroke="white" stroke-width="0.3"/><line x1="40" y1="120" x2="260" y2="120" stroke="white" stroke-width="0.3"/><rect x="60" y="55" width="40" height="20" fill="white" opacity="0.2"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Brand Identity</div><div class="project-title">Maison Forge — Luxury Brand Refresh</div><a href="#" class="project-link">View project</a></div>
+          </div>
+          <div class="project-card pc-8">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><polygon points="150,20 280,180 20,180" fill="none" stroke="white" stroke-width="1"/><polygon points="150,60 240,180 60,180" fill="white" opacity="0.07"/><line x1="150" y1="20" x2="150" y2="180" stroke="white" stroke-width="0.4" stroke-dasharray="4,3"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Print & Publication</div><div class="project-title">Forma Journal — Annual Report 2023</div><a href="#" class="project-link">View project</a></div>
+          </div>
+          <div class="project-card pc-9">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><circle cx="90" cy="100" r="55" stroke="white" stroke-width="0.6"/><circle cx="210" cy="100" r="55" stroke="white" stroke-width="0.6"/><circle cx="150" cy="100" r="30" fill="white" opacity="0.1"/><line x1="150" y1="45" x2="150" y2="155" stroke="white" stroke-width="0.3"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Packaging Design</div><div class="project-title">Dew — Skincare Packaging System</div><a href="#" class="project-link">View project</a></div>
+          </div>
+          <div class="project-card pc-10">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><rect x="30" y="30" width="80" height="80" stroke="white" stroke-width="0.6"/><rect x="110" y="30" width="80" height="80" fill="white" opacity="0.1" stroke="white" stroke-width="0.6"/><rect x="190" y="30" width="80" height="80" stroke="white" stroke-width="0.6"/><rect x="70" y="130" width="80" height="40" stroke="white" stroke-width="0.6"/><rect x="150" y="130" width="80" height="40" fill="white" opacity="0.1" stroke="white" stroke-width="0.6"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Visual Systems</div><div class="project-title">Grid Studio — Component Library</div><a href="#" class="project-link">View project</a></div>
+          </div>
+          <div class="project-card pc-1">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><path d="M60,170 L150,30 L240,170" stroke="white" stroke-width="1" fill="none"/><path d="M90,170 L150,70 L210,170" stroke="white" stroke-width="0.5" fill="none" opacity="0.5"/><line x1="60" y1="130" x2="240" y2="130" stroke="white" stroke-width="0.4"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Art Direction</div><div class="project-title">Crest — Brand Campaign Direction</div><a href="#" class="project-link">View project</a></div>
+          </div>
+          <div class="project-card pc-3">
+            <div class="project-bg"></div>
+            <div class="project-art"><svg viewBox="0 0 300 200" width="220" fill="none"><ellipse cx="150" cy="100" rx="120" ry="70" stroke="white" stroke-width="0.6"/><ellipse cx="150" cy="100" rx="80" ry="45" stroke="white" stroke-width="0.4"/><ellipse cx="150" cy="100" rx="40" ry="20" fill="white" opacity="0.1"/></svg></div>
+            <div class="project-overlay"><div class="project-cat">Editorial</div><div class="project-title">Echo — Music Magazine Rebrand</div><a href="#" class="project-link">View project</a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="work-slider-nav">
+      <button class="work-nav-btn" id="workPrev" disabled>←</button>
+      <div class="work-dots" id="workDots"></div>
+      <span class="work-counter" id="workCounter">1 / 2</span>
+      <button class="work-nav-btn" id="workNext">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section class="services" id="services">
+  <div class="section-label reveal">Services</div>
+  <div>
+    <div class="services-grid reveal">
+      <div class="service-item"><div class="service-num">01</div><div class="service-title">Brand Identity</div><div class="service-desc">Logo systems, colour palettes, typography, brand guidelines, and full visual identity from concept to launch.</div></div>
+      <div class="service-item"><div class="service-num">02</div><div class="service-title">Editorial & Print</div><div class="service-desc">Books, magazines, annual reports, and publications designed with editorial rigor and typographic precision.</div></div>
+      <div class="service-item"><div class="service-num">03</div><div class="service-title">Art Direction</div><div class="service-desc">Creative vision and direction for photo shoots, campaigns, and visual communications that demand cohesion.</div></div>
+      <div class="service-item"><div class="service-num">04</div><div class="service-title">Packaging Design</div><div class="service-desc">Structural and graphic packaging that stands out on shelf and tells a brand's story at point of sale.</div></div>
+      <div class="service-item"><div class="service-num">05</div><div class="service-title">Visual Systems</div><div class="service-desc">Scalable design languages and component libraries built for teams that need consistency across every touchpoint.</div></div>
+      <div class="service-item"><div class="service-num">06</div><div class="service-title">Motion & Digital</div><div class="service-desc">Animated logos, motion identity, and digital brand expressions for social media and interactive environments.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section class="reviews" id="reviews">
+  <div class="reviews-header reveal">
+    <div class="section-label">Reviews</div>
+    <div class="reviews-intro">
+      <h2>Words from <em>clients</em>.</h2>
+      <p>Every project is a collaboration. Here's what the people behind those projects have to say about working together.</p>
+    </div>
+  </div>
+
+  <div class="reviews-slider reveal">
+    <div class="reviews-track-wrap">
+      <div class="reviews-track" id="reviewsTrack">
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">Adeleke didn't just design our brand — he gave it a soul. The identity he created for Terracotta Studio has become the single most complimented thing about our business. Clients walk in and immediately feel the vision.</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: #5c3a2e;">L</div>
+            <div>
+              <div class="review-name">Lena Fischer</div>
+              <div class="review-role">Creative Director</div>
+              <div class="review-company">Terracotta Studio</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">Working with Adeleke on Reverie's annual issue was extraordinary. He brought a typographic sensibility I hadn't seen before — everything from the grid to the page turns felt deliberate and full of intention.</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: #16213e;">R</div>
+            <div>
+              <div class="review-name">Rafael Okafor</div>
+              <div class="review-role">Editor-in-Chief</div>
+              <div class="review-company">Reverie Magazine</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">Our packaging went from generic to iconic in a single project. Adeleke understood our botanical ethos instantly — the structural elegance and the earthy palette he chose made our products fly off shelves.</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: #2d4a3e;">S</div>
+            <div>
+              <div class="review-name">Sofía Ayala</div>
+              <div class="review-role">Founder & CEO</div>
+              <div class="review-company">Bloom Botanicals</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">I've worked with many designers and Adeleke Israel stands apart. He asks the right questions before he ever opens Figma. The visual system he built for us has scaled beautifully across 12 different product lines.</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: #3a1f4a;">T</div>
+            <div>
+              <div class="review-name">Theo Marchetti</div>
+              <div class="review-role">Head of Brand</div>
+              <div class="review-company">Venn Studio</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">Adeleke art-directed our campaign shoot with the confidence of someone who has done this a hundred times. He had a clear vision from day one and the final frames were exactly what we imagined — but better.</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: #2a3a1a;">A</div>
+            <div>
+              <div class="review-name">Adeleke Israel</div>
+              <div class="review-role">Marketing Director</div>
+              <div class="review-company">Aurore</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">The motion identity Adeleke created for our app launch made investors stop scrolling. It was the perfect blend of sophistication and energy — everything our brand needed to compete at the next level.</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: #0d2a3a;">N</div>
+            <div>
+              <div class="review-name">Nikhil Rao</div>
+              <div class="review-role">Co-Founder</div>
+              <div class="review-company">Wave Digital</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">From the first call I knew this was different. Adeleke didn't just listen — he synthesised. The brand refresh for Maison Forge felt like the culmination of everything we'd been trying to say for five years, finally articulated.</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: #4a2020;">C</div>
+            <div>
+              <div class="review-name">Claudette Renard</div>
+              <div class="review-role">Brand Manager</div>
+              <div class="review-company">Maison Forge</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">Adeleke Israel approach to our annual report transformed something we dreaded producing into something we're proud to send. The information design was clear without being cold, and the typographic choices gave it real authority.</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: #103030;">J</div>
+            <div>
+              <div class="review-name">Jonas Eriksen</div>
+              <div class="review-role">Communications Lead</div>
+              <div class="review-company">Forma Journal</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="reviews-nav">
+      <button class="reviews-nav-btn" id="reviewsPrev">←</button>
+      <div class="reviews-dots" id="reviewsDots"></div>
+      <button class="reviews-nav-btn" id="reviewsNext">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="section-label reveal">Contact</div>
+    <h2 class="reveal">Let's make something <em>worth seeing</em>.</h2>
+    <a href="mailto:hello@adelekeisrael.co" class="contact-email reveal">hello@adelekeisrael.co</a>
+    <div class="contact-footer reveal">
+      <p>© 2024 Adeleke Israel. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Behance</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Are.na</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHATSAPP CHATBOT ── -->
+<div class="wa-launcher">
+  <div class="wa-chat" id="waChat">
+    <div class="chat-header">
+      <div class="chat-avatar">A</div>
+      <div class="chat-info">
+        <div class="chat-name">Adeleke Israel · Studio</div>
+        <div class="chat-status">Typically replies within minutes</div>
+      </div>
+      <button class="chat-x" id="chatClose" aria-label="Close">✕</button>
+    </div>
+    <div class="chat-msgs" id="chatMsgs"></div>
+    <div class="chat-qr" id="chatQR"></div>
+    <div class="chat-foot">
+      <input class="chat-inp" id="chatInp" type="text" placeholder="Type a message…" />
+      <button class="chat-send-btn" id="chatSend" aria-label="Send">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+  <button class="wa-fab" id="waFab" aria-label="Chat on WhatsApp">
+    <div class="wa-badge">1</div>
+    <svg viewBox="0 0 32 32" fill="none"><path d="M16 3C8.82 3 3 8.82 3 16c0 2.36.63 4.57 1.73 6.49L3 29l6.72-1.76A12.93 12.93 0 0016 29c7.18 0 13-5.82 13-13S23.18 3 16 3z" fill="white"/><path d="M16 5.5c-5.79 0-10.5 4.71-10.5 10.5 0 1.96.54 3.79 1.48 5.35L6 25l3.8-.97A10.46 10.46 0 0016 26.5c5.79 0 10.5-4.71 10.5-10.5S21.79 5.5 16 5.5z" fill="#25D366"/><path d="M21.1 18.7c-.27-.14-1.62-.8-1.87-.89-.25-.09-.43-.13-.61.14-.18.27-.7.89-.86 1.07-.16.18-.32.2-.59.07-.27-.14-1.15-.42-2.19-1.35-.81-.72-1.36-1.6-1.52-1.87-.16-.27-.02-.42.12-.55.12-.12.27-.31.41-.47.14-.16.18-.27.27-.45.09-.18.04-.34-.02-.48-.07-.13-.61-1.47-.84-2.01-.22-.53-.44-.46-.61-.46l-.52-.01c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.26s.97 2.62 1.1 2.8c.14.18 1.91 2.92 4.63 4.09.65.28 1.15.45 1.54.57.65.21 1.24.18 1.71.11.52-.08 1.6-.65 1.82-1.29.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z" fill="white"/></svg>
+  </button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
